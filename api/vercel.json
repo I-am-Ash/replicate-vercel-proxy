@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/**/*.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/img", "dest": "api/img.js" },
+    { "src": "/poll/(.*)", "dest": "api/poll/[id].js" }
+  ]
+}
